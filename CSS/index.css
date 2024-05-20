@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    background-image: linear-gradient(#10081A 60%,#402680);
+    padding: 15px;
+}
+
+header ul {
+    float: right;
+    color: white;
+}
+
+header li {
+    display: inline-block;
+    padding: 0px 7px 9px;
+}
+
+.heroImg {
+  padding: 35px;
+  margin-left:80px;
+  margin-right:80px;
+
+  color:white;
+}
+.heroGrid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    grid-auto-rows: auto;
+}
+@media screen and (max-width:600px)
+.card-wide {
+    grid-column: span 2 / auto;
+}
+
+.card-portrait {
+    grid-column: span 3 / auto;
+}
+
+.card-logo {
+    
+    grid-row: span 3 / auto;
+    float:inline-end;
+}
+
+button {
+    background: linear-gradient(to bottom, #5d00d6, #c500d6);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    padding: 4px;
+    border-radius: 12px;
+    color: white;
+    border: 2px solid white;
+}
+
+button:hover {
+    background: linear-gradient(to top, #c500d6, #000000 60%);
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0;
+    border: 2px solid #ffa;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer container */
+.footer {
+    background-color: #3B2855;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer content wrapper */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Email, logo, and LinkedIn links */
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Copyright text */
+.copyright {
+    margin-top: 10px;
+}
+
+.footer h2 {
+    text-decoration: underline;
+    color: #5d00d6;
+}
+
+.intro {
+    font-size: x-large;
+    padding: 10px;
+}
+
+/* My UX Skills */
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexContent1 {
+    text-align: left; 
+    max-width:fit-content;
+}
+
+.flexContent1 h3,
+.flexContent1 p {
+    margin: 10px; 
+}
+
+.flexImage1 {
+    max-width: 100%; 
+}
+
+.flexContainer {
+    color: white
+}
+
+
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:80px;
+}
+
+.flexContent {
+    text-align: left; 
+    max-width:fit-content;
+}
+
+.flexContent h3,
+.flexContent p {
+    margin: 10px; 
+}
+
+.flexImage {
+    max-width: 100%; 
+}
+
+
+
+
+.mySkillsheader {
+    color: white;
+}
+
+.mySkills {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.mySkills .mySkillsheader {
+    margin-top: 20px; 
+}
+
+.mySkills {
+    text-align: center; 
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skillItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillImage {
+    width: 100%;
+    margin: 10px;
+}
+
+.skillContent {
+    flex: 1;
+    background-color: #c500d6;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    margin: 10px;
+    width: 100%;
+}
+
+.skillContent h3 {
+    margin-bottom: 10px;
+}
+
+
+/* My Work Carousel */
+
+.myWork {
+    color: white;
+}
+
+.myWork {
+    text-align: center; 
+    background-color: #221b2a;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling:inherit; 
+}
+
+.workGrid {
+    flex: 0 0 auto; 
+    scroll-snap-align: start; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:80px;
+}
+
+.carousel-caption {
+    margin-top: auto; 
+    text-align: center; 
+}
+
+button {
+    margin-top: 30px; 
+}
+
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+.pagination-dot {
+    width: 20px;
+    height: 4px;
+    background-color: #ccc;
+    margin: 0 5px; 
+    border-radius: 2px;
+}
+
+.pagination-dot.active {
+    background-color: #333;
+}
+
+/* For screens up to 600px wide */
+@media screen and (max-width: 600px) {
+    .heroGrid {
+        grid-template-columns: 1fr; 
+    }
+
+    .workGrid {
+        margin: 20px; 
+    }
+}
+
+/* For screens up to 768px wide */
+@media screen and (max-width: 768px) {
+    .heroImg {
+        padding: 20px; 
+        margin: 0; 
+    }
+
+    .workGrid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 20px; 
+        margin: 20px;
+    }
+
+    .workGrid img {
+        max-width: 100%; 
+        height: auto; 
+    }
+    .skillsGrid {
+        grid-template-columns: repeat(1, 1fr);
+}
+
+/* For screens up to 1024px wide */
+@media screen and (max-width: 1024px) {
+    .heroImg {
+        margin-left: 20px; 
+        margin-right: 20px; 
+    }
+}
+
+/* For screens up to 768px wide */
+@media screen and (max-width: 768px) {
+    header ul {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        background-color: #402680;
+        width: 100%; 
+        padding: 10px 0; 
+    }
+
+    header li {
+        display: block; 
+        padding: 10px 20px; 
+        border-bottom: 1px solid #5d00d6; 
+    }
+
+    .menu-toggle {
+        display: block; 
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .menu-open ul {
+        display: block; 
+    }
+/* Yes I know I've got my tags backwards. Something to be fixed later. */
+    .card-logo {
+        display: none;
+    }
+}
